@@ -1,0 +1,59 @@
+-- EX 1
+-- select count(*) as NumberOfOrders
+-- from [NorthWind].[dbo].[Orders]
+
+-- EX 2
+-- select count(*) as NumberOfCustomers
+-- from [NorthWind].[dbo].[Customers]
+
+-- EX 3
+-- select *
+-- from [NorthWind].[dbo].[Customers]
+-- where City = 'London'
+
+-- EX 4
+-- select avg(Freight) as AverageFreight 
+-- from [NorthWind].[dbo].[Orders]
+
+-- EX 5
+-- select CustomerID, avg(Freight) as AverageFreight
+-- from [NorthWind].[dbo].[Orders]
+-- where CustomerID = 'BOTTM'
+-- group by CustomerID
+
+-- EX 6
+-- select CustomerID, sum(Freight) as TotalFreight
+-- from [NorthWind].[dbo].[Orders]
+-- group by CustomerID
+
+
+-- EX 7
+-- select City, count(CustomerID) as NumberOfCustomers
+-- from [NorthWind].[dbo].[Customers]
+-- group by City
+
+-- EX 8
+-- select OrderID, sum(UnitPrice) as TotalPrice
+-- from [NorthWind].[dbo].[Order Details]
+-- group by OrderID
+
+-- EX 9
+-- select OrderID, sum(UnitPrice) as TotalPrice
+-- from [NorthWind].[dbo].[Order Details]
+-- group by OrderId
+-- having OrderID = '10248'
+
+-- EX 10
+-- select CategoryID, count(ProductID) as NumberOfProducts
+-- from [NorthWind].[dbo].[Products]
+-- group by CategoryID
+
+-- EX 11
+-- select ShipCountry, count(OrderID) as NumberOfOrders
+-- from [NorthWind].[dbo].[Orders]
+-- group by ShipCountry
+
+-- Ex 12
+-- select ShipCountry, avg(Freight) as AverageFreight
+-- from [NorthWind].[dbo].[Orders]
+-- group by ShipCountry
